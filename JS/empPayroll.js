@@ -1,3 +1,9 @@
+/*
+Purpose :- Contains all the javascript functons for employee wage page.
+@author :- Ganesh Gavhad
+@Version :- 1.0
+@Since :- 02/09/2021
+*/
 //UC-2
 let isUpdate = false;
 let employeePayrollObj = {};
@@ -23,6 +29,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     salary.addEventListener('input', function () {
         output.textContent = salary.value;
     });
+checkForUpdate();
 });
 //UC-3
 const save = () =>{

@@ -1,5 +1,11 @@
-/* UC6 Home Page Header */
+/*
+Purpose :- Style the home page for emp payroll.
+@author :- Ganesh
+@Version :- 1.0
+@Since :- 02/09/2021
+*/
 
+/* UC6 Home Page Header */
 html body {
     margin: 0;
     height: 100%;

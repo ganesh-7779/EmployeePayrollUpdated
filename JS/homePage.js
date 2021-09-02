@@ -1,3 +1,10 @@
+/*
+Purpose :- JavaScript functions for home page.
+@author :- Ganesh Gavhad
+@Version :- 1.0
+@Since :- 02/09/2021
+*/
+
 let empPayrollList;
 window.addEventListener('DOMContentLoaded', (event) => {
   empPayrollList=getEmployeePayrollDataFromStorage();
@@ -89,3 +96,11 @@ let remove = (node) => {
   document.querySelector(".emp-count").textContent = empPayrollList.length;
   createInnerHtml();
 } 
+
+const checkForUpdate = () => {
+  const employeePayrollJson = localStorage.getItem('editEmp');
+  isUpdate = employeePayrollJson ? true : false;
+  if(!isUpdate) return;
+  employeePayrollObj = JSON.parse(employeePayrollJson);
+  setForm();
+}

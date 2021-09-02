@@ -1,3 +1,10 @@
+/*
+Purpose :- Style the index.html page.
+@author :- Ganesh
+@Version :- 1.0
+@Since :- 02/09/2021
+*/
+
 html body {
     margin: 0;
     height: 100%;
@@ -39,6 +46,7 @@ html body {
 .emp-payroll {
     color: #42515f;
 }       
+
 
 .form-content {
     min-height: calc(100% - 80px);
